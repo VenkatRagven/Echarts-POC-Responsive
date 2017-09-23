@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+        <meta charset="utf-8">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <body style="height: 100%; margin: 0">
+        <div id="container" style="height: 100%">
+			<div class="row" style="margin-top:100px;">
+				<div class="col-md-4">
+					<div id="chart" style="min-height:300px;width:100%;"></div>
+				</div>
+				<!-- <div class="col-md-4"> -->
+					<!-- <div id="graphDiv1" style="min-height:300px;width:100%;"></div> -->
+				<!-- </div> -->
+				
+			</div>
+	    </div>
+	   
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+       <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+       <script type="text/javascript">
+			<!-- chart 1 starts -->
+			var chart = document.getElementById('chart');
+    		var myChart = echarts.init(chart);
+    		var option = {
+    			title: { text: 'ECharts Sample' },
+    			tooltip: { },
+    			legend: { data: [ 'Sales' ] },
+    			xAxis: { data: [ "shirt", "cardign", "chiffon shirt", "pants", "heels", "socks" ] },
+    			yAxis: { },
+    			series: [{
+    				name: 'Sales',
+    				type: 'bar',
+    				data: [5, 20, 36, 10, 10, 20]
+    			}]
+    		};
+    		myChart.setOption(option);
+			<!-- chart 1 ends -->
+			<!-- chart2 starts -->
+			
+			<!-- chart 2 ends -->
+	
+		
+		$(window).on('resize', function(){
+			if(myChart != null && myChart != undefined){
+				myChart.resize();
+			}
+			
+		});
+       </script>
+   </body>
+</html>

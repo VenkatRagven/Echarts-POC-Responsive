@@ -1,0 +1,15 @@
+{
+	"barTitle":["Json Data - Bar Chart"],
+	"simplebarTitle":["Json Data - Simple Bar Chart"],
+	"pieTitle":["Json Data - Pie Chart"],
+    "data2": [100,1000,2000,3000,4000,5000,6000],
+	"months":["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"],
+	"callouts":[5,20,36,8,10,2,42,55,40,33,20,35],
+    "data1": [null,1000,2000,3000,4000,5000,6000],
+    "names": ["Interest ","Treasury","Defense","Social","Security ","Centers","Health"],
+	"pieData":["Jan","Feb","Mar","April","May"],
+	"testData":["Data 1","Data 2"],
+	"pieValue":[null,310,234,135,154],
+	"colorValue":[3661,5713,9938,17623,3299],
+	"colorName":["data1","data2","data3","data4","data5"]
+}
